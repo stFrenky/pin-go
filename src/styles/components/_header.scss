@@ -1,0 +1,26 @@
+.main-wrap {
+  background-image: url("src/assets/images/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.header {
+  background: rgba(8, 8, 8, 0.95);
+  backdrop-filter: blur(5px);
+
+  &__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 57px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 0 23px;
+    height: 100%;
+  }
+}
