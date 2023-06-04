@@ -1,0 +1,137 @@
+.feedback {
+  background: #121212;
+  display: flex;
+  flex-direction: column;
+  gap: 25px 0;
+  padding-bottom: 40px;
+  &__container {
+    max-width: 890px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    background: #080808;
+    padding: 26px;
+    font-weight: 600;
+    border-radius: 8px;
+    height: 72px;
+    border: none;
+    width: 282px;
+    color: #f5f9ff;
+    outline:none;
+
+    &::-webkit-input-placeholder {
+      color:    #f5f9ff;
+    }
+    &:-moz-placeholder {
+      color:    #f5f9ff;
+      opacity:  1;
+    }
+    &::-moz-placeholder {
+      color:    #f5f9ff;
+      opacity:  1;
+    }
+    &:-ms-input-placeholder {
+      color:    #f5f9ff;
+    }
+    &::-ms-input-placeholder {
+      color:    #f5f9ff;
+    }
+
+    &::placeholder {
+      color:    #f5f9ff;
+    }
+  }
+
+
+
+  &__input-telegram {
+    margin-left: 14px;
+  }
+
+  &__input-massage {
+      width: 100%;
+      height: 220px;
+  }
+
+  &__form-footer {
+    height: 72px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  &__input-checkbox {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &__label {
+    color: #A0A2A6;
+
+    span {
+      color: #ff2549;
+      margin: 0 5px;
+    }
+  }
+
+  &__input-checkbox+&__label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  &__input-checkbox+&__label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 6px;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    background-color: #f5f9ff;
+  }
+
+  &__input-checkbox:checked+&__label::before {
+    background-color: #ff2549;
+    background-image: url("src/assets/images/icons/mark-checkbox.svg");
+  }
+
+  &__btn {
+    padding: 25px;
+    max-width: 280px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    background: #FF2549;
+    border-radius: 8px;
+    border: none;
+  }
+
+}
