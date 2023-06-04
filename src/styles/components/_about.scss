@@ -1,0 +1,31 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    padding: 32px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #080808;
+    width: 33.33%;
+    min-height: 225px;
+    gap: 16px;
+
+    &:nth-child(2n) {
+      background: #121212;
+    }
+  }
+
+  &__title {
+    min-height: 44px;
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__text {
+    display: flex;
+  }
+}
