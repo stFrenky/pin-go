@@ -30,6 +30,7 @@ export default defineConfig({
                 ...INPUTS
             },
         },
+        base: '/pin-go/',
         css: {
             preprocessorOptions: {
                 scss: {
