@@ -1,0 +1,74 @@
+.first-frame {
+  height: 1018px;
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0) 80.25%, #080808 100%), rgba(8, 8, 8, 0.8);
+  padding-top: 255px;
+
+  &__container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  &__bread-crumbs {
+    margin-bottom: 25px;
+  }
+
+  &__info {
+    max-width: 480px ;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 63px;
+    color: #F5F9FF;
+    margin-bottom: 30px;
+
+    span {
+      color: #ff2549;
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 63px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    color: #C0C0C0;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff2549;
+    border-radius: 50px;
+    padding: 16px 42px;
+    max-width: 260px;
+  }
+}
+
+.bread-crumbs {
+  display: flex;
+  gap: 0 28px;
+
+  &__item {
+    display: flex;
+    position: relative;
+    text-transform: uppercase;
+    color: #C0C0C0;
+    &:not(:last-child) {
+      &::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        right: -15px;
+        width: 6px;
+        height: 10px;
+        transform: translateY(-50%);
+        background: url("src/assets/images/icons/bread-crumbs-arrow.svg");
+
+      }
+    }
+  }
+}

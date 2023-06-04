@@ -1,0 +1,75 @@
+.services {
+  display: flex;
+  gap: 0 8px;
+  padding: 0 0 100px 0;
+  margin-top: -75px;
+  z-index: 1;
+  position: relative;
+
+  &__item-wrap {
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    height: 164px;
+    border-radius: 6px;
+    box-shadow: 0 12px 29px -5px rgba(0, 0, 0, 0.42);
+    background: linear-gradient(45deg, rgba(8,8,8,1) 20%, rgba(255,37,73,1) 50%, rgba(8,8,8,1) 80%);
+
+
+
+    &:nth-child(2) {
+      padding: 0 1px 0 1px;
+      background: radial-gradient(circle, rgb(255, 37, 73) 60%, rgb(8, 8, 8) 100%);
+    }
+
+    &:nth-child(3) {
+      background: linear-gradient(-45deg, rgba(8,8,8,1) 20%, rgba(255,37,73,1) 50%, rgba(8,8,8,1) 80%);
+    }
+
+    &:nth-child(4) {
+      background: linear-gradient(45deg, rgba(255,37,73,1) 0%, rgba(8,8,8,1) 47%, rgba(8,8,8,1) 50%, rgba(255,37,73,1) 100%);
+    }
+    &:nth-child(5) {
+      background: linear-gradient(60deg, rgba(8,8,8,1) 40%, rgba(255,37,73,1) 50%, rgba(255,37,73,1) 60%, rgba(8,8,8,1) 70%);
+    }
+    &:nth-child(6) {
+      background: linear-gradient(-45deg, rgba(8,8,8,1) 30%, rgba(255,37,73,1) 50%, rgba(8,8,8,1) 90%);
+
+    }
+  }
+
+  &__item {
+    height: 100%;
+    border-radius: 6px;
+    background: #121212;
+    box-shadow: 0 12px 29px -5px rgba(0, 0, 0, 0.42);
+
+
+  }
+
+  &__item-title {
+    padding: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  &__item-info  {
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+    padding: 12px 15px;
+    background: #080808;
+  }
+
+  &__item-price, &__item-term {
+    span {
+      color: #ff2549;
+      margin-right: 5px;
+    }
+  }
+
+}

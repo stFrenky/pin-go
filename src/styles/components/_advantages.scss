@@ -1,0 +1,86 @@
+.advantages {
+  padding-bottom: 65px;
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 30px;
+
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  &__item-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((100% - 45px) / 4);
+    padding: 1px;
+    height: 254px;
+    border-radius: 6px;
+    box-shadow: 0 12px 29px -5px rgba(0, 0, 0, 0.42);
+    background: linear-gradient(340deg, rgb(8, 8, 8) 0%, rgb(255, 37, 73) 50%, rgb(8, 8, 8) 80%);
+
+
+    &:nth-child(2) {
+      padding: 0 1px 0 1px;
+      background: linear-gradient(174deg, rgb(8, 8, 8) 5%, rgb(255, 37, 73) 45%, rgb(8, 8, 8) 80%);
+
+    }
+
+    &:nth-child(3) {
+      background: linear-gradient(-45deg, rgba(8,8,8,1) 20%, rgba(255,37,73,1) 50%, rgba(8,8,8,1) 80%);
+    }
+
+    &:nth-child(4) {
+      background: linear-gradient(45deg, rgba(255,37,73,1) 0%, rgba(8,8,8,1) 47%, rgba(8,8,8,1) 50%, rgba(255,37,73,1) 100%);
+    }
+    &:nth-child(5) {
+      background: linear-gradient(80deg, rgb(8, 8, 8) 20%, rgb(255, 37, 73) 50%, rgb(255, 37, 73) 60%, rgb(8, 8, 8) 85%);
+    }
+    &:nth-child(6) {
+      background: linear-gradient(42deg, rgb(8, 8, 8) 10%, rgb(255, 37, 73) 50%, rgb(8, 8, 8) 80%);
+    }
+    &:nth-child(7) {
+      background: linear-gradient(312deg, rgb(8, 8, 8) 5%, rgb(255, 37, 73) 40%, rgb(8, 8, 8) 79%);
+    }
+    &:nth-child(8) {
+      background: linear-gradient(312deg, rgb(8, 8, 8) 5%, rgb(255, 37, 73) 40%, rgb(8, 8, 8) 79%);
+    }
+  }
+
+  &__item {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px 0;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: 0 12px 29px -5px rgba(0, 0, 0, 0.42);
+    background: #121212;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__item-img {
+    width: 96px;
+    height: 96px;
+  }
+
+  &__item-about {
+    text-align: center;
+    width: fit-content;
+  }
+}
