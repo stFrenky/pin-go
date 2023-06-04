@@ -126,7 +126,7 @@
 
   &__input-checkbox:checked+&__label::before {
     background-color: #ff2549;
-    background-image: url("src/assets/images/icons/mark-checkbox.svg");
+    background-image: url("@/assets/images/icons/mark-checkbox.svg");
   }
 
   &__btn {
