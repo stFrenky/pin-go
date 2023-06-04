@@ -23,6 +23,7 @@ export default defineConfig({
             "@": fileURLToPath(new URL("./src", import.meta.url)),
         },
     },
+    base: '/pin-go/',
     build: {
         rollupOptions: {
             input: {
@@ -30,7 +31,6 @@ export default defineConfig({
                 ...INPUTS
             },
         },
-        base: '/pin-go/',
         css: {
             preprocessorOptions: {
                 scss: {
