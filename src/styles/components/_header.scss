@@ -2,6 +2,9 @@
   background-image: url("src/assets/images/main-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  background-color: #080808;
+  z-index: 1;
+  position: relative;
 }
 
 .header {
@@ -22,5 +25,12 @@
     align-items: center;
     gap: 0 23px;
     height: 100%;
+  }
+
+  &__btn {
+    background: rgba(255, 37, 73, 0.15);
+    border: 1px solid #FF2549;
+    border-radius: 50px;
+    padding: 9px 24px;
   }
 }
