@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   margin-bottom: 65px;
 
+  @media (max-width: 425px) {
+    margin-bottom: 40px;
+  }
+
   &__item {
     padding: 32px;
     display: flex;
