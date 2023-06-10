@@ -2,17 +2,18 @@
   display: flex;
   gap: 8px;
   justify-content: center;
-  padding: 0 0 100px 0;
+  padding: 0 12px;
   margin-top: -75px;
   z-index: 1;
   position: relative;
+  margin-bottom: 100px;
 
   @media (max-width: 1200px) {
     flex-wrap: wrap;
   }
 
   @media (max-width: 768px) {
-    margin-top: -75px;
+    margin-top: -225px;
   }
 
   &__item-wrap {
