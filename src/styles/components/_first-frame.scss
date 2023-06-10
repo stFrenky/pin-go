@@ -3,6 +3,10 @@
   background: linear-gradient(180deg, rgba(8, 8, 8, 0) 80.25%, #080808 100%), rgba(8, 8, 8, 0.8);
   padding-top: 255px;
 
+  @media (max-width: 768px) {
+    padding-top: 200px;
+  }
+
   &__container {
     max-width: 1306px;
     padding: 0 12px;
@@ -14,7 +18,7 @@
   }
 
   &__info {
-    max-width: 480px ;
+    max-width: 480px;
   }
 
   &__title {
@@ -24,11 +28,17 @@
     color: #F5F9FF;
     margin-bottom: 30px;
 
+    @media (max-width: 550px) {
+      font-size: 32px;
+      line-height: 39px;
+      margin-bottom: 25px;
+    }
+
     span {
       color: #ff2549;
-      font-weight: 700;
-      font-size: 52px;
-      line-height: 63px;
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
     }
   }
 
