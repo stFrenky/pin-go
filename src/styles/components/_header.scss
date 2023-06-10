@@ -6,6 +6,10 @@
   @media (max-width: 1440px) {
     background-position: -250px center;
   }
+
+  @media (max-width: 768px) {
+    background-position: -250px -150px;
+  }
 }
 
 .header {
