@@ -23,6 +23,10 @@
       background: url("@/assets/images/icons/telegram.svg") no-repeat center center;
       top: -40px;
       right: 25px;
+
+      @media (max-width: 550px) {
+          display: none;
+      }
     }
   }
 
