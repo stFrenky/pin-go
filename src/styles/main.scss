@@ -2,6 +2,10 @@
 @use 'fonts';
 @use 'typography';
 
+html[scroll] {
+  overflow-y: hidden;
+}
+
 * {
   text-decoration: none;
   color: #f5f9ff;
@@ -10,6 +14,7 @@
 
 .logo {
   display: flex;
+  cursor: pointer;
 }
 
 .main {

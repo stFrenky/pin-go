@@ -128,6 +128,7 @@
 
   &__label {
     color: #A0A2A6;
+    cursor: pointer;
 
     span {
       color: #ff2549;
@@ -171,6 +172,7 @@
     background: #FF2549;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 
     @media (max-width: 425px) {
       max-width: 100%;

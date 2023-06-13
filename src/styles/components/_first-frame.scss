@@ -56,6 +56,7 @@
     border-radius: 50px;
     padding: 16px 42px;
     max-width: 260px;
+    cursor: pointer;
   }
 }
 
@@ -68,6 +69,7 @@
     position: relative;
     text-transform: uppercase;
     color: #C0C0C0;
+    cursor: pointer;
     &:not(:last-child) {
       &::before {
         position: absolute;

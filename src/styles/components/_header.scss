@@ -118,7 +118,8 @@
   }
 
   &__menu-mobile {
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     top: 60px;
     right: 0;
     display: none;
