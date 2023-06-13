@@ -2,10 +2,19 @@
 @use 'fonts';
 @use 'typography';
 
+html[scroll] {
+  overflow-y: hidden;
+}
+
 * {
   text-decoration: none;
   color: #f5f9ff;
   box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  cursor: pointer;
 }
 
 .main {

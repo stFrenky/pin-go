@@ -1,11 +1,24 @@
 .advantages {
-  padding-bottom: 65px;
+ margin-bottom: 65px;
+
+  @media (max-width: 1300px) {
+    padding: 0 12px;
+  }
+
+  @media (max-width: 425px) {
+    margin-bottom: 40px;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
     text-align: center;
     margin-bottom: 30px;
+
+    @media (max-width: 700px) {
+      font-size: 26px;
+    }
 
     span {
       font-weight: 700;
@@ -19,6 +32,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+
+    @media (max-width: 1300px) {
+      justify-content: center;
+    }
   }
 
   &__item-wrap {
@@ -26,12 +43,24 @@
     justify-content: center;
     align-items: center;
     width: calc((100% - 45px) / 4);
+    max-width: 366px;
     padding: 1px;
     height: 254px;
     border-radius: 6px;
     box-shadow: 0 12px 29px -5px rgba(0, 0, 0, 0.42);
     background: linear-gradient(340deg, rgb(8, 8, 8) 0%, rgb(255, 37, 73) 50%, rgb(8, 8, 8) 80%);
 
+    @media (max-width: 1300px) {
+      width: calc((100% - 30px) / 3);
+    }
+
+    @media (max-width: 1000px) {
+      width: calc((100% - 15px) / 2);
+    }
+
+    @media (max-width: 650px) {
+      width: 100%;
+    }
 
     &:nth-child(2) {
       padding: 0 1px 0 1px;
@@ -70,7 +99,7 @@
     gap: 24px 0;
     height: 100%;
     border-radius: 6px;
-    box-shadow: 0 12px 29px -5px rgba(0, 0, 0, 0.42);
+   box-shadow: 0 12px 29px -5px rgba(0, 0, 0, 0.42);
     background: #121212;
   }
 
@@ -89,4 +118,14 @@
     text-align: center;
     width: fit-content;
   }
+}
+
+
+
+.color-red {
+  color: red;
+}
+
+.fsz30 {
+  font-size: 30px;
 }

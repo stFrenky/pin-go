@@ -3,10 +3,16 @@
   display: flex;
   flex-direction: column;
   gap: 25px 0;
-  padding: 40px 0;
+  padding: 40px 0 50px;
+
+  @media (max-width: 550px) {
+    padding: 30px 0;
+
+  }
 
   &__container {
-    max-width: 890px;
+    max-width: 914px;
+    padding: 0 12px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -16,10 +22,13 @@
   &__title {
     font-weight: 700;
     font-size: 36px;
-
     text-align: center;
     max-width: 570px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        font-size: 26px;
+    }
   }
 
   &__subtitle {
@@ -27,6 +36,10 @@
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__form {
@@ -45,6 +58,14 @@
     width: 282px;
     color: #f5f9ff;
     outline:none;
+
+    @media (max-width: 1000px) {
+      width: calc((100% - 15px) / 2);
+    }
+
+    @media (max-width: 550px) {
+      width: 100%
+    }
 
     &::-webkit-input-placeholder {
       color:    #f5f9ff;
@@ -73,6 +94,11 @@
 
   &__input-telegram {
     margin-left: 14px;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 
   &__input-massage {
@@ -81,12 +107,17 @@
   }
 
   &__form-footer {
-    height: 72px;
     display: flex;
     justify-content: space-between ;
     align-items: center;
     width: 100%;
     margin-top: 10px;
+
+    @media (max-width: 850px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 30px 0;
+    }
   }
 
   &__input-checkbox {
@@ -97,10 +128,12 @@
 
   &__label {
     color: #A0A2A6;
+    cursor: pointer;
 
     span {
       color: #ff2549;
       margin: 0 5px;
+      display: contents;
     }
   }
 
@@ -139,6 +172,11 @@
     background: #FF2549;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
+
+    @media (max-width: 425px) {
+      max-width: 100%;
+    }
   }
 
 }

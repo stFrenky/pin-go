@@ -15,12 +15,23 @@
                     <img src="src/assets/images/icons/logo.svg" alt="logo">
                 </div>
                 <nav class="header__menu">
-                    <div class="header__menu-item active"><a href="#" class="header__menu-link">Главная</a></div>
-                    <div class="header__menu-item"><a href="#" class="header__menu-link">Услуги</a></div>
-                    <div class="header__menu-item"><a href="#" class="header__menu-link">О компании</a></div>
-                    <div class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></div>
+                    <a href='#' class="header__menu-item active">Главная</a>
+                    <a href='#' class="header__menu-item">Услуги</a>
+                    <a href='#' class="header__menu-item">О компании</a>
+                    <a href='#' class="header__menu-item">Контакты</a>
                 </nav>
-                <div class="header__btn"><a href="#">Отследить груз</a></div>
+                <a class="header__btn" href="#">Отследить груз</a>
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+<!--                <nav class="header__menu-mobile">-->
+<!--                    <a href='#' class="header__menu-item">Главная</a>-->
+<!--                    <a href='#' class="header__menu-item">Услуги</a>-->
+<!--                    <a href='#' class="header__menu-item">О компании</a>-->
+<!--                    <a href='#' class="header__menu-item">Контакты</a>-->
+<!--                </nav>-->
             </div>
         </header>
         <div class="first-frame">
@@ -41,6 +52,12 @@
 
     <main class="main">
         <div class="container">
+            <nav class="header__menu-mobile">
+                <a href='#' class="header__menu-item">Главная</a>
+                <a href='#' class="header__menu-item">Услуги</a>
+                <a href='#' class="header__menu-item">О компании</a>
+                <a href='#' class="header__menu-item">Контакты</a>
+            </nav>
             <section class="services">
                 <div class="services__item-wrap">
                     <div class="services__item">
@@ -196,7 +213,7 @@
                     <textarea class="feedback__input feedback__input-massage" type="text" placeholder="Ваше сообщение"></textarea>
                     <div class="feedback__form-footer">
                         <div class="feedback__form-checkbox-wrap">
-                            <input class="feedback__input feedback__input-checkbox" type="checkbox" id="checkbox">
+                            <input class="feedback__input-checkbox" type="checkbox" id="checkbox">
                             <label class="feedback__label" for="checkbox">Согласен(-сна) на <span>обработку</span>  моих персональных данных</label>
                         </div>
                         <button class="feedback__btn">Отправить</button>
