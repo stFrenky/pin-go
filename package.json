@@ -19,11 +19,15 @@
     "url": "https://github.com/Infinity-Kim/VFBuild/issues"
   },
   "homepage": "https://github.com/Infinity-Kim/VFBuild#readme",
+  "browserslist": [ "cover 99.5%" ],
   "dependencies": {
+    "imask": "^6.6.3",
     "normalize.css": "^8.0.1",
     "vite": "^3.2.7"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
     "sass": "^1.62.1",
     "vite": "^3.2.3"
   }

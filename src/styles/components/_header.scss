@@ -1,6 +1,5 @@
 .main-wrap {
-  background: url("@/assets/images/main-bg.jpg") no-repeat top center;
-  z-index: 1;
+  background: url("@/assets/images/main-bg.jpg") #080808 no-repeat top center;
   position: relative;
 
   @media (max-width: 1440px) {
@@ -13,7 +12,11 @@
 }
 
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
   background: rgba(8, 8, 8, 0.95);
+
   backdrop-filter: blur(5px);
 
   &__container {

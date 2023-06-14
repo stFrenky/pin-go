@@ -1,8 +1,10 @@
 import {fileURLToPath, URL} from "node:url";
+import { defineConfig } from 'vite'
+import autoprefixer from 'autoprefixer'
+
 
 const fs = require('fs')
 const path = require('path')
-import { defineConfig } from 'vite'
 
 const PAGES = fs.readdirSync('./pages');
 
@@ -32,6 +34,11 @@ export default defineConfig({
             },
         },
         css: {
+            postcss: {
+                plugins: [
+                    autoprefixer({}) // add options if needed
+                ],
+            },
             preprocessorOptions: {
                 scss: {
                     additionalData: `
