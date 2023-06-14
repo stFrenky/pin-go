@@ -10,6 +10,7 @@ html[scroll] {
   text-decoration: none;
   color: #f5f9ff;
   box-sizing: border-box;
+  //border: 1px solid #FF2549;
 }
 
 .logo {
@@ -19,6 +20,26 @@ html[scroll] {
 
 .main {
   background-color: #080808;
+}
+
+.telegram {
+  bottom: -180px;
+  right: 25px;
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  z-index: 2;
+
+    img {
+      position: fixed;
+      width: 120px;
+      height: 120px;
+      cursor: pointer;
+
+      @media (max-width: 550px) {
+        display: none;
+      }
+    }
 }
 
 .container {
