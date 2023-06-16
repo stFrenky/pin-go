@@ -175,6 +175,7 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    transition: all, .3s;
 
     @media (max-width: 425px) {
       max-width: 100%;
