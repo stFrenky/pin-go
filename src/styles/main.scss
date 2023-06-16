@@ -34,35 +34,20 @@ html[scroll] {
 
   }
 }
-//@keyframes hideTelegram {
-//  0% {
-//    opacity: 0;
-//
-//  }
-//  50% {
-//    opacity: 1;
-//
-//  }
-//  100% {
-//    opacity: 0;
-//  }
-//}
 
 .telegram {
   cursor: pointer;
   z-index: 2;
-  bottom: 25px;
-  right: 25px;
+  bottom: 5px;
+  right: 5px;
   border-radius: 50%;
   padding: 5px;
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 130px;
-  height: 130px;
-
-
+  width: 100px;
+  height: 100px;
 
   &__last-border {
     width: 100px;
