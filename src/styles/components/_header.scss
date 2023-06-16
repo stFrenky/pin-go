@@ -1,5 +1,6 @@
 .main-wrap {
-  background: url("@/assets/images/main-bg.jpg") #080808 no-repeat top center;
+  background: url("@/assets/images/main-bg.jpg") #080808 no-repeat  bottom center;
+  background-size: cover;
   position: relative;
 
   @media (max-width: 1440px) {
@@ -45,6 +46,8 @@
     height: 100%;
 
     &.active {
+      box-shadow: 0 13px 14px -12px rgba(255, 37, 73, 0.5);
+
       &::before {
         content: '';
         position: absolute;
@@ -53,6 +56,7 @@
         height: 3px;
         background: #FF2549;
         border-radius: 2px 2px 0 0;
+
       }
     }
   }
@@ -65,6 +69,11 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
+
+    &:hover {
+      transform: translateX(-5px);
+      box-shadow: 0 12px 7px -8px rgba(255, 37, 73, 0.5);
+    }
 
     @media (max-width: 768px) {
       margin-left: auto;
@@ -122,7 +131,7 @@
 
   &__menu-mobile {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 60px;
     right: 0;
     display: none;
@@ -146,14 +155,15 @@
       font-weight: 500;
 
       &.active {
+        box-shadow: 1px 0px 16px -12px rgba(255, 37, 73, 0.5);
         color: #F5F9FF;
         font-weight: 600;
-
         &::before {
           left: 0;
           width: 6px;
           height: 100%;
           border-radius: 0 2px 2px 0;
+
         }
       }
     }

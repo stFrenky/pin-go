@@ -1,3 +1,10 @@
+@keyframes rotate-gradient {
+  to {
+    transform: rotate(180deg);
+    width: 200%
+  }
+}
+
 .advantages {
  margin-bottom: 65px;
 
@@ -21,7 +28,7 @@
     }
 
     span {
-      font-weight: 700;
+      font-weight: 800;
       font-size: 36px;
       line-height: 44px;
       color: #ff2549;
@@ -48,7 +55,24 @@
     height: 254px;
     border-radius: 6px;
     box-shadow: 0 12px 29px -5px rgba(0, 0, 0, 0.42);
-    background: linear-gradient(340deg, rgb(8, 8, 8) 0%, rgb(255, 37, 73) 50%, rgb(8, 8, 8) 80%);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      background: linear-gradient(340deg, rgb(8, 8, 8) 0%, rgb(255, 37, 73) 50%, rgb(8, 8, 8) 80%);
+      width: 110%;
+      height: 110%;
+      z-index: 1;
+    }
+
+    &:hover {
+      &::before {
+        animation: rotate-gradient linear  5s normal infinite ;
+      }
+    }
 
     @media (max-width: 1300px) {
       width: calc((100% - 30px) / 3);
@@ -63,29 +87,43 @@
     }
 
     &:nth-child(2) {
-      padding: 0 1px 0 1px;
+      &::before {
       background: linear-gradient(174deg, rgb(8, 8, 8) 5%, rgb(255, 37, 73) 45%, rgb(8, 8, 8) 80%);
+      }
+      padding: 0 1px 0 1px;
 
     }
 
     &:nth-child(3) {
+      &::before {
       background: linear-gradient(-45deg, rgba(8,8,8,1) 20%, rgba(255,37,73,1) 50%, rgba(8,8,8,1) 80%);
+      }
     }
 
     &:nth-child(4) {
+      &::before {
       background: linear-gradient(45deg, rgba(255,37,73,1) 0%, rgba(8,8,8,1) 47%, rgba(8,8,8,1) 50%, rgba(255,37,73,1) 100%);
+      }
     }
     &:nth-child(5) {
+      &::before {
       background: linear-gradient(80deg, rgb(8, 8, 8) 20%, rgb(255, 37, 73) 50%, rgb(255, 37, 73) 60%, rgb(8, 8, 8) 85%);
+      }
     }
     &:nth-child(6) {
+      &::before {
       background: linear-gradient(42deg, rgb(8, 8, 8) 10%, rgb(255, 37, 73) 50%, rgb(8, 8, 8) 80%);
+      }
     }
     &:nth-child(7) {
+      &::before {
       background: linear-gradient(312deg, rgb(8, 8, 8) 5%, rgb(255, 37, 73) 40%, rgb(8, 8, 8) 79%);
+      }
     }
     &:nth-child(8) {
+      &::before {
       background: linear-gradient(312deg, rgb(8, 8, 8) 5%, rgb(255, 37, 73) 40%, rgb(8, 8, 8) 79%);
+      }
     }
   }
 
@@ -101,6 +139,7 @@
     border-radius: 6px;
    box-shadow: 0 12px 29px -5px rgba(0, 0, 0, 0.42);
     background: #121212;
+    z-index: 2;
   }
 
   &__item-title {

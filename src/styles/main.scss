@@ -22,22 +22,90 @@ html[scroll] {
   background-color: #080808;
 }
 
+
+@keyframes scaleWidth {
+  0% {
+    width: 60px;
+    height: 60px;
+  }
+  100% {
+    scale: 60%;
+    box-shadow: 0 0 20px 5px rgba(255, 37, 73, 0.5);
+
+  }
+}
+//@keyframes hideTelegram {
+//  0% {
+//    opacity: 0;
+//
+//  }
+//  50% {
+//    opacity: 1;
+//
+//  }
+//  100% {
+//    opacity: 0;
+//  }
+//}
+
 .telegram {
-  display: flex;
-  justify-content: flex-end;
+  cursor: pointer;
   z-index: 2;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 50%;
+  padding: 5px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+
+
+
+  &__last-border {
+    width: 100px;
+    height: 100px;
+    background: #831628;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    animation: scaleWidth linear infinite alternate 1.2s;
+  }
+
+
+  &__middle-border {
+    max-width: 80px;
+    width: 100%;
+    max-height: 80px;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #C11D38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  &__first-border {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: #FF2549;
+    padding: 20px 18px 18px;
 
     img {
-      position: fixed;
-      bottom: 25px;
-      width: 120px;
-      height: 120px;
-      cursor: pointer;
-
-      @media (max-width: 550px) {
-        display: none;
-      }
+      max-width: 25px;
+      height: 20px;
+      animation: hideTelegram ease infinite alternate-reverse 2s;
     }
+  }
+
+  @media (max-width: 550px) {
+    display: none;
+  }
 }
 
 .container {
