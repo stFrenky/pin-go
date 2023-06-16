@@ -10,7 +10,6 @@ html[scroll] {
   text-decoration: none;
   color: #f5f9ff;
   box-sizing: border-box;
-  //border: 1px solid #FF2549;
 }
 
 .logo {
@@ -25,66 +24,78 @@ html[scroll] {
 
 @keyframes scaleWidth {
   0% {
-    width: 60px;
-    height: 60px;
+    width: 80%;
+    height: 80%;
   }
   100% {
-    scale: 60%;
-    box-shadow: 0 0 20px 5px rgba(255, 37, 73, 0.5);
+    width: 110%;
+    height: 110%;
 
+    box-shadow: 0 0 20px 5px rgba(255, 37, 73, 0.5);
   }
 }
 
 .telegram {
   cursor: pointer;
   z-index: 3;
-  bottom: 5px;
-  right: 5px;
+  bottom: 15px;
+  right: 15px;
   border-radius: 50%;
   padding: 5px;
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 
   &__last-border {
-    width: 100px;
-    height: 100px;
+    position: relative;
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+    height: 100%;
     background: #831628;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
     animation: scaleWidth linear infinite alternate 1.2s;
+
   }
 
 
   &__middle-border {
     max-width: 80px;
-    width: 100%;
     max-height: 80px;
+    width: 100%;
     height: 100%;
     border-radius: 50px;
     background-color: #C11D38;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: scaleWidth linear infinite alternate 1.2s;
+
 
   }
 
   &__first-border {
-    width: 60px;
-    height: 60px;
+    animation: scaleWidth linear infinite alternate 1.2s;
+    max-width: 80px;
+    max-height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50px;
     background: #FF2549;
     padding: 20px 18px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
       max-width: 25px;
       height: 20px;
-      animation: hideTelegram ease infinite alternate-reverse 2s;
     }
   }
 
