@@ -3,12 +3,8 @@
   background-size: cover;
   position: relative;
 
-  @media (max-width: 1440px) {
-    background-position: -250px center;
-  }
-
   @media (max-width: 768px) {
-    background-position: -250px -150px;
+    background-position: -155px center;
   }
 }
 
@@ -133,18 +129,18 @@
     position: fixed;
     z-index: 3;
     top: 60px;
-    right: 0;
-    display: none;
+    right: -320px;
+    display: flex;
     flex-direction: column;
     background: rgba(8, 8, 8, 0.95);
     backdrop-filter: blur(5px);
     width: 320px;
     height: calc(100vh - 60px);
     padding: 30px 0;
-    transition: width, ease .3s;
+    transition: all, ease .3s;
 
     &.active {
-      display: flex;
+      right: 0;
     }
 
     .header__menu-item {
